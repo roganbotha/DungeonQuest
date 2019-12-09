@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2A171B4C-9480-4A6C-9B66-45E4CCFFE9F0}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>DungeonQuest</RootNamespace>
+    <AssemblyName>DungeonQuest</AssemblyName>
+    <TargetFrameworkVersion>v4.7</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Board.cs" />
+    <Compile Include="BrotherGherkin.cs" />
+    <Compile Include="Card.cs" />
+    <Compile Include="CatacombCard.cs" />
+    <Compile Include="ChamberOfDarkness.cs" />
+    <Compile Include="ChandrallaAndBrightblaze.cs" />
+    <Compile Include="CorpseCard.cs" />
+    <Compile Include="Corridor.cs" />
+    <Compile Include="CryptCard.cs" />
+    <Compile Include="DoorCard.cs" />
+    <Compile Include="DragonDeck.cs" />
+    <Compile Include="DungeonCard.cs" />
+    <Compile Include="DungeonTile.cs" />
+    <Compile Include="CaveInTile.cs" />
+    <Compile Include="Factory.cs" />
+    <Compile Include="HealingRune.cs" />
+    <Compile Include="HugoTheGlorious.cs" />
+    <Compile Include="LightningRune.cs" />
+    <Compile Include="Players.cs" />
+    <Compile Include="ProtectionRune.cs" />
+    <Compile Include="RandomNumberGenerator.cs" />
+    <Compile Include="Rune.cs" />
+    <Compile Include="TeleportationRune.cs" />
+    <Compile Include="Tile.cs" />
+    <Compile Include="Player.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Timer.cs" />
+    <Compile Include="TowerTile.cs" />
+    <Compile Include="TrapCard.cs" />
+    <Compile Include="TrapTile.cs" />
+    <Compile Include="Treasure.cs" />
+    <Compile Include="TreasureCard.cs" />
+    <Compile Include="TreasureChamber.cs" />
+    <Compile Include="UserInterface.cs" />
+    <Compile Include="WebTile.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
